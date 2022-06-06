@@ -1,12 +1,12 @@
-from image import create_image
+from image import create_image, grab_random_image
 from post import post
 
 Images = [
-    'images/maps/1.png',
-    'images/overlay/rus-gb.png'
+    grab_random_image('images/maps/'),
+    grab_random_image('images/overlay/')
 ]
 
 create_image(Images)
 
-post('Look at this crazy 1 ticket win!')
-
+print()
+# post('Look at this crazy 1 ticket win!', subreddit='U_1-Ticket-Wins')
